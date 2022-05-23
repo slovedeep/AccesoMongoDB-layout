@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <script src="../script/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="./movies.html">Home</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="container">
+
+
+            <h1 class="form__title">Movies</h1>
+            <div class="form__input-group">
+                <button class="form__button" onclick="getMovies()" type="button">Get All Movies</button>
+            </div>
+            <div class="form__input-group">
+                <button class="form__button" onclick="getMovieById()" type="button">Get Movie Id:2</button>
+            </div>
+            <div class="form__input-group">
+                <button class="form__button" onclick="CreateNewMovie()" type="button">Add new Movie</button>
+            </div>
+            <div class="form__input-group">
+                <button class="form__button" onclick="UpdateMovie()" type="button">Update Movie</button>
+            </div>
+            <div class="form__input-group">
+                <button class="form__button" onclick="RemovieMovie()" type="button">Delete Movie</button>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+    <div id="moviesTemplate"></div>
+</body>
+
+</html>
